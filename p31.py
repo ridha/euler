@@ -15,7 +15,7 @@ How many different ways can £2 be made using any number of coins?
 def nways(target, coins):
     ways = [1] + [0] * target
     for coin in coins:
-        for i in range(coin, target + 1):
+        for i in xrange(coin, target + 1):
             ways[i] += ways[i - coin]
     return ways[target]
 
