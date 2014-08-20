@@ -5,8 +5,8 @@
 package main
 
 import (
-	"./helpers"
 	"fmt"
+	"github.com/ridha/euler/golang/helpers"
 )
 
 func main() {
