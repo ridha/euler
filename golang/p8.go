@@ -41,7 +41,7 @@ func main() {
 	)
 
 	step := 13
-	for i := 0; i+step <= len(nums); {
+	for i := 0; i+step <= len(nums); i++ {
 		prod = 1
 		for _, r := range nums[i : i+step] {
 			i, err := strconv.Atoi(string(r))
@@ -54,8 +54,6 @@ func main() {
 		if max_prod < prod {
 			max_prod = prod
 		}
-
-		i += 1
 	}
 	fmt.Println(max_prod)
 
